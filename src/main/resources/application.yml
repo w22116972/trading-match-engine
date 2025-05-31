@@ -1,0 +1,9 @@
+app:
+  newOrderTopic: NewOrder
+  tradeExecutedTopic: TradeExecuted
+  orderBookPrefix: "order:"
+spring:
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: matching-engine-group
